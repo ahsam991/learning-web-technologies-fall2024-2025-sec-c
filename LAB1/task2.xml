@@ -1,0 +1,21 @@
+<addmission>
+    <students sr="1">
+        <serial_num>23</serial_num>
+        <name_first>Jhon</name_first>
+        <name_last>Carter</name_last>
+        <addmission_date>25/12/2015</addmission_date>
+    </students>
+    <students sr="2">
+        <serial_num>29</serial_num>
+        <name_first>Bob</name_first>
+        <name_last>Marshal</name_last>
+        <addmission_date>13/01/1999</addmission_date>
+    </students>
+    <students sr="3">
+        <serial_num>35</serial_num>
+        <name_first>Clark</name_first>
+        <name_last>Kent</name_last>
+        <addmission_date>17/06/2005</addmission_date>
+    </students>
+    
+</addmission>
