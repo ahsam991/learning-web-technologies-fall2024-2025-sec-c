@@ -1,42 +1,55 @@
 <offices>
     <oficers sr="1">
         <id>1</id>
+        <name>
         <name_first>John</name_first>
         <name_lastt> Doe</name_lastt>
+        </name>
+        <address>
         <address_flat></address_flat>
         <address_house>38 </address_house>
         <address_road>3</address_road>
         <address_area>Banani</address_area>
         <address_city>Dhaka</address_city>
+        </address>
     <depertment>Sales</depertment>
     <salary>$20000</salary>
+
    </oficers>
 
    <oficers sr="2">
     <id>2</id>
+    <name>
     <name_first>Mark</name_first>
     <name_lastt> Zuckerberg</name_lastt>
+    <name>
+    <address>
     <address_flat> A/1</address_flat>
     <address_house>20 </address_house>
     <address_road>18</address_road>
     <address_area>Mirpur</address_area>
     <address_city>Dhaka</address_city>
+    </address>
     <depertment>Accounts</depertment>
     <salary>$12000</salary>
    </oficers>
 
    <oficers sr="3">
     <id>3</id>
+    <name>
     <name_first>Ala</name_first>
     <name_lastt> Voski</name_lastt>
+</name>
+<address>
     <address_flat></address_flat>
     <address_house>38 </address_house>
     <address_road>3</address_road>
     <address_area>Motijheel</address_area>
     <address_city></address_city>
+    </address>
     <depertment>Human Resource</depertment>
     <salary>$30000</salary>
    </oficers>
 
-    
+
 </offices>
