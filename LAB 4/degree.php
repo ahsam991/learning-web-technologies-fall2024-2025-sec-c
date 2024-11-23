@@ -14,27 +14,27 @@
             <input type="submit" name="submit" value="Submit">
         </fieldset>
     </form>
+  <?php
+    if(isset($_POST['degrees']))
+    {
+        $degrees = $_POST['degrees'];
+        if (count($degrees) >= 2)
+        {
+            echo "Valid selection";
+        }
+        
+        else
+        {
+            echo "Invalid selection";
+        }
+    }
+    
+    else if(isset($_POST['submit']))
+    {
+        echo "Invalid selection";
+    }
+    ?>
+    
 </body>
 </html>
-
-
-<?php
-
-if (isset($_POST['email']) && !empty($_POST['email'])) {
-    $email = $_POST['email'];
-} else {
-    $email = null;
-}
-
-
-if (isset($_POST['option']) && count($_POST['option']) >= 2) {
-   
-    header("Location: BDValidation.php");
-    exit();
-} else {
-
-    echo "Please select at least two options.";
-}
-?>
-
 
