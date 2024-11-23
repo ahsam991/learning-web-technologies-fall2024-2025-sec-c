@@ -24,11 +24,11 @@
     </form>
 
     <?php
-    // Check if the form is submitted by checking if 'submit' is set in the POST data
+
     if (isset($_POST['submit'])) {
         $selectedBloodGroup = $_POST['bloodGroup'];
 
-        // Validate the selected blood group
+  
         if (empty($selectedBloodGroup)) {
             echo "Please select a blood group.";
         } else {
