@@ -20,14 +20,14 @@
         </fieldset>    
     </form>
 
-    <?php
+     <?php
     if(isset($_POST["submit"])) {
         $day = $_POST['day'];
         $month = $_POST['month'];
         $year = $_POST['year'];
 
         if (!empty($day) && !empty($month) && !empty($year)) {
-            // Validate day, month, and year
+        
             if (!($day >= 1 && $day <= 31)) {
                 echo "Day must be between 1-31";
             } else if (!($month >= 1 && $month <= 12)) {
