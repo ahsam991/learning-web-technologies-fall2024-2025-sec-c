@@ -15,21 +15,26 @@
             <hr>
             <input type="submit" name="submit" value="Submit">
         </fieldset>
-    </form>
+  </form>  
+
+    <?php
+    if(isset($_POST['gender']))
+    {
+        $gender = $_POST['gender'];
+
+        if (!empty($gender))
+        {
+            echo 'Gender is selected';
+        }
+    }
+
+    
+    else
+    {
+        echo "Gender is not selected";
+    }
+    
+    ?>
+
 </body>
 </html>
-<?php
-// Directly check if the 'gender' field exists in the POST data
-if (isset($_POST['gender'])) {
-    $gender = $_POST['gender'];
-    echo' Gender is : '.$gender;
-} else {
-    $gender = null;
-}
-
-if (empty($gender)) {
-    //header("Location: degree.php");
-    echo'At least one of them must be selected ';
-    exit();
-}
-?>
