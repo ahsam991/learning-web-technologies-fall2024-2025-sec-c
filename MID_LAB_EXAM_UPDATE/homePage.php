@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,9 @@
     <form method="post" action="">
         <fieldset>
             <legend>Home</legend>
-            <p>Wecome to homepage</p>    <br><br>
-            
+            <p>Welcome to homepage</p>    
+            <br><br>
             <input type="submit" name="submit" value="Submit"> 
-            
         </fieldset>
     </form>
 </body>
@@ -19,16 +17,20 @@
 
 <?php
     session_start();
-    if(!isset($_SESSION['status'])){
-        header('location: loginCheck.php'); 
-    }else if(isset($_SESSION['submit']))
-    {
-        header('location: loginCheck.php'); 
 
+    
+    if (!isset($_SESSION['status'])) {
+        header('location: loginCheck.php'); 
+        exit(); 
+    }
+
+    
+    if (isset($_POST['submit'])) {
+        
+        $_SESSION['submit'] = true;
+        
+        
+        header('location: loginCheck.php'); 
+        exit(); 
     }
 ?>
-
-
-
-
-
